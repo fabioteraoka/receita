@@ -7,17 +7,17 @@ export const Footer = () => {
   return (
     <footer className="grid justify-items-center gap-4 border-t border-neutral-200 pt-8">
       <p className="text-center italic text-neutral-400">
-        Proudly published with{" "}
+        @2022 por{" "}
         <PrismicLink
-          href="https://prismic.io"
+          href="https://avalondevops.com.br"
           target="_blank"
           className="pl-1 font-bold text-neutral-700"
         >
-          Prismic
+          AvalonDevops
         </PrismicLink>
       </p>
-      <PrismicLink href="https://prismic.io" target="_blank">
-        <img src="/logo-prismic.svg" alt="Prismic logo" className="w-8" />
+      <PrismicLink href="https://avalondevops.com.br" target="_blank">
+        <img src="/avalon-logo.svg" alt="Avalon logo" className="w-24" />
       </PrismicLink>
     </footer>
   );
