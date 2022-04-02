@@ -1,5 +1,6 @@
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import * as prismicH from "@prismicio/helpers";
+import Image from "next/image";
 
 const getExcerptFromSlices = (slices) => {
   const text =
@@ -23,6 +24,8 @@ const getExcerptFromSlices = (slices) => {
  */
 export const PostItem = ({ post }) => {
   const excerpt = getExcerptFromSlices(post.data.slices);
+  const image = (post.data.slices);
+  console.log(image)
 
   const displayDate = new Intl.DateTimeFormat("en-US", {
     month: "short",
@@ -31,17 +34,25 @@ export const PostItem = ({ post }) => {
   }).format(prismicH.asDate(post.data.date));
 
   return (
-    <div className="grid gap-2">
-      <h2 className="text-2xl font-black md:text-3xl">
-        <PrismicLink document={post}>
-          <PrismicText field={post.data.title} />
-        </PrismicLink>
-      </h2>
-
-      <p className="text-neutral-400">
-        <time dateTime={post.data.date}>{displayDate}</time>
-      </p>
-
+    <div className="flex grid gap-2">
+      <div className="grid flex-1 gap-2">
+        <h2 className="text-2xl font-black md:text-3xl">
+          <PrismicLink document={post}>
+            <PrismicText field={post.data.title} />
+          </PrismicLink>
+        </h2>
+        <p className="text-neutral-400">
+          <time dateTime={post.data.date}>{displayDate}</time>
+        </p>
+      </div>
+      <div className="grid flex-1 gap-2">
+          <Image 
+            src={image[0].primary.image.url}
+            alt={image[0].primary.image.alt}
+            width={image[0].primary.image.dimensions.width}
+            height={image[0].primary.image.dimensions.height}
+          />
+      </div>
       {excerpt && (
         <p className="font-serif leading-relaxed md:text-lg">{excerpt}</p>
       )}

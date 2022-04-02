@@ -14,8 +14,6 @@ const Quote = ({ slice }) => {
           </span>
           <PrismicText field={slice.primary.quote} />
           <span className="pointer-events-none select-none">&rdquo;</span>
-          <div className="-mx-6 md:mx-0"  
-              dangerouslySetInnerHTML={{ __html: slice.primary.video.html }} />
         </blockquote>
       )}
     </section>

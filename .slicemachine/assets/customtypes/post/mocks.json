@@ -1,15 +1,24 @@
 {
-  "id": "2930805e-ef1e-4504-8481-d34310b743d9",
-  "uid": "enim-illum-qui",
+  "id": "32165d51-f6d9-463c-a367-d31539ea6b4f",
+  "uid": "et-dicta-sit",
   "type": "post",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Grow end-to-end channels",
+        "text": "Streamline granular e-markets",
         "spans": []
       }
     ],
-    "date": "2015-04-12"
+    "date": "2019-12-18",
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
+    }
   }
 }

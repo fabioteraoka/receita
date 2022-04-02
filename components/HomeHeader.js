@@ -9,7 +9,7 @@ export const HomeHeader = ({ image, headline, description }) => {
       <img
         src={image.url}
         alt={image.alt}
-        className="block h-36 w-36 rounded-full object-cover"
+        className="block h-full w-full rounded-lg object-cover"
       />
       <h1 className="text-center text-4xl font-black md:text-5xl">
         <PrismicText field={headline} />

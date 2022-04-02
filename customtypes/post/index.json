@@ -28,6 +28,14 @@
         },
         "type": "Date"
       },
+      "image": {
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
@@ -40,6 +48,9 @@
               "type": "SharedSlice"
             },
             "text": {
+              "type": "SharedSlice"
+            },
+            "video": {
               "type": "SharedSlice"
             }
           }
